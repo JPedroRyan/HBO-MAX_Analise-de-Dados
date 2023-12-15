@@ -22,19 +22,8 @@ with st.container():
     gif_url = 'https://images.squarespace-cdn.com/content/v1/52adf1abe4b0dbce9d210136/1604110439985-ZMHFGV7B48XOF35I14I2/HBO+Max+-+Family+Section+GIF.gif?format=2500w'
     st.image(gif_url, use_column_width=True) #Comando para exibir o Gif
 
-#Container 3º, detalhando como funciona a base de dados
-with st.container():
-    st.title('Detalhes da base de dados')
-    st.write('Informações de como funciona a base, especificação das colunas:')
-    st.markdown('* **title:** Corresponde ao nome do filme ou série.')
-    st.markdown('* **type:** Identifica o tipo do conteúdo se e do tipo filme (movie) ou série (TV).')
-    st.markdown('* **year:** Ano de lançamento.')
-    st.markdown('* **rating:** Avaliação do filme ou série.')
-    st.markdown('* **year:** Ano de lançamento.')
-    st.markdown('* **imdb_score:** Nota de avaliação do IMDB.')
-    st.markdown('* **rotten_score:** Pontuação podre, mostra a potuação negativa do filme ou série.')
-    st.markdown('* **decade:** Periodo de decada (periodo de 10 anos).')
-    st.markdown('* **imdb_bucket:** Média de avaliação IMDB.')
-    st.markdown('* **genres:** Referece ao gênero do filme ou série, a várias colunas de gênero cada uma para ação, comedia, romance e etc. Essas colunas recebem valores de 0 (False) é 1 (True) para o gênero pertencido.')
-    st.markdown('* **platforms:** Referece a plataforma em que o filme e série se encontra, no mesmo modelo da coluna "genres" são várias colunas com nomes de plataformas onde recem valores de verdadeiro e falso para cada caso.')
-
+    st.subheader('Oque é esse projeto?')
+    st.write('Esse projeto faz consultas do catalago da HBO MAX, nessas consultas podem ser filtrados os dados por período de ano, pelo tipo de gênero do programa sendo ação, romance, comeédia e etc, também e possível visualizar em quais plataformas os programas estão disponíveis.')
+    st.write('Nesse projeto existem gráficos e comparação de críticas de programas onde podem ser filtrados também de acordo com suas necessidades ou preferencias.')
+    st.write('Outro detalhe do projeto e que ele faz o rank dos melhores programas, junto dessa visualização você pode verificar onde está disponivel esses programas.')
+    st.write('Também pode ser visto a média de pontuação da crítica por programa, além de ter essa visualização você pode filtrar a consulta e visualização desses dados pelo ano de lançamento, tipo de gênero é plataforma disponível.')
